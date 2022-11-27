@@ -1,6 +1,8 @@
+package Group1;
+
 import java.util.Scanner;
 
-public class Rainbow {
+public class Ex5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое число от 1 до 7");
@@ -11,7 +13,6 @@ public class Rainbow {
             number = scanner.nextInt();
         }
         System.out.println(getRainbowColor(number));
-
     }
 
     public static String getRainbowColor(int num){
@@ -19,6 +20,7 @@ public class Rainbow {
         switch (num){
             case 1:
                 color = "Красный";
+                break;
             case 2:
                 color = "Оранжевый";
                 break;
@@ -42,10 +44,7 @@ public class Rainbow {
     }
 
     public static boolean isValid(int monthNumber){
-        if(monthNumber > 0 && monthNumber < 8){
-            return true;
-        }
-        return false;
+        return monthNumber > 0 && monthNumber < 8;
     }
 
 }

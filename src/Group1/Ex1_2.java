@@ -1,6 +1,8 @@
+package Group1;
+
 import java.util.Scanner;
 
-public class Month {
+public class Ex1_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите номер месяца");
@@ -12,15 +14,12 @@ public class Month {
             monthNumber = scanner.nextInt();
         }
 
-        //showTimeOfYearByMonth_SwitchCase(monthNumber);
+        showTimeOfYearByMonth_SwitchCase(monthNumber);
         showTimeOfYearByMonth_IfElse(monthNumber);
-
-
-
     }
 
     public static void showTimeOfYearByMonth_SwitchCase(int monthNumber){
-        String timeOfYear = "";
+        String timeOfYear;
         switch (monthNumber){
             case 2:
                 timeOfYear = "Зима";
@@ -74,9 +73,6 @@ public class Month {
     }
 
     public static boolean isValid(int monthNumber){
-        if(monthNumber > 0 && monthNumber < 13){
-            return true;
-        }
-        return false;
+        return monthNumber > 0 && monthNumber < 13;
     }
 }

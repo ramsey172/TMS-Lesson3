@@ -1,6 +1,8 @@
+package Group1;
+
 import java.util.Scanner;
 
-public class Even {
+public class Ex3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое число");
@@ -12,16 +14,10 @@ public class Even {
         }else{
             System.out.println("Нечетное");
         }
-
-
-
     }
 
     public static boolean isEven(int num){
-        if(num % 2 > 0){
-            return false;
-        }
-        return true;
+        return num % 2 == 0;
     }
 
 }
